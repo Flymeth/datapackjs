@@ -22,7 +22,7 @@ npm init -y
 ### Install the librairy
 
 ```pwsh
-npm i --s datapackjs
+npm i --s @flymeth/datapackjs
 ```
 
 ### Start using it
@@ -38,4 +38,4 @@ const dp = new DatapackJS({
 // And so on...
 ```
 
-Pro tip: Go to the [documentation](./modules.html) before start using it!
+Pro tip: Go to the [documentation](https://flymeth.github.io/datapackjs/web/modules.html) before start using it!

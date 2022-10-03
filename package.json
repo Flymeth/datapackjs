@@ -1,5 +1,5 @@
 {
-	"name": "datapackjs",
+	"name": "@flymeth/datapackjs",
 	"version": "1.0.0",
 	"author": "Flymeth",
 	"license": "LSI",
@@ -20,12 +20,17 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
     "displayName": "Datapack.js",
-    "readme": "docs/readme.md",
+    "readme": "./readme.md",
 	"keywords": [
 		"datapack",
 		"javascript",
 		"typed",
 		"librairy",
-		"minecraft"
+		"minecraft",
+		"datapackjs",
+		"datapack.js",
+		"flymeth",
+		"flylibs",
+		"typescript"
 	]
 }

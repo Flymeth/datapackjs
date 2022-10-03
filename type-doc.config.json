@@ -3,10 +3,10 @@
     "tsconfig": "./src/tsconfig.json",
     "out": "./docs/web",
     "json": "./docs/map.json",
-    "customCss": "./docs/style.css",
+    "customCss": "./docs/web.css",
     "name": "DatapackJs",
     "darkHighlightTheme": "dark-plus",
     "theme": "default",
-    "readme": "./docs/readme.md",
+    "readme": "./readme.md",
     "internalModule": "utils"
 }
