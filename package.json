@@ -1,0 +1,31 @@
+{
+	"name": "datapackjs",
+	"version": "1.0.0",
+	"author": "Flymeth",
+	"license": "LSI",
+	"description": "A great library to create your own minecraft datapack with javascript!",
+	"dependencies": {
+		"fs": "^0.0.1-security",
+		"path": "^0.12.7"
+	},
+	"peerDependencies": {
+		"typedoc": "^0.23.10"
+	},
+	"devDependencies": {
+		"typedoc-plugin-missing-exports": "^1.0.0",
+		"typedoc-plugin-not-exported": "^0.1.6"
+	},
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+    "displayName": "Datapack.js",
+    "readme": "docs/readme.md",
+	"keywords": [
+		"datapack",
+		"javascript",
+		"typed",
+		"librairy",
+		"minecraft"
+	]
+}

@@ -1,0 +1,12 @@
+{
+    "entryPoints": ["./src/index.ts", "./src/tools.ts"],
+    "tsconfig": "./src/tsconfig.json",
+    "out": "./docs/web",
+    "json": "./docs/map.json",
+    "customCss": "./docs/style.css",
+    "name": "DatapackJs",
+    "darkHighlightTheme": "dark-plus",
+    "theme": "default",
+    "readme": "./docs/readme.md",
+    "internalModule": "utils"
+}

@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@types/node": "^17.0.39",
+    "@types/chalk-animation": "^1.6.1",
+    "typescript": "^4.7.2"
+  },
+  "name": "datapackjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "datapack",
+    "javascript",
+    "typed",
+    "librairy",
+    "minecraft"
+  ],
+  "author": "Flymeth",
+  "license": "LSI",
+  "description": "A great library to create your own minecraft datapack with javascript!",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
