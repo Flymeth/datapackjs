@@ -1,5 +1,5 @@
-./node_modules
-./src/node_modules
-./src/package.json
-./src/package-lock.json
-./tests
+node_modules
+src/node_modules
+src/package.json
+src/package-lock.json
+tests
