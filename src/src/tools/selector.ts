@@ -212,7 +212,7 @@ class Entity {
     private advanceSelector() {
         if(!this.selector) return ""
         const allSelectors: string[] = []
-
+        
         if(this.selector.type && !this.isPlayerType) allSelectors.push(`type=${this.selector.type}`)
         if(this.selector.limit) allSelectors.push(`limit=${this.selector.limit}`)
         if(this.selector.area) for(const axe in this.selector.area) if(this.selector.area[axe] !== undefined) allSelectors.push(`d${axe}=${this.selector.area[axe]}`)
@@ -220,7 +220,7 @@ class Entity {
         if(this.selector.gamemodes) for(const gm of this.selector.gamemodes) allSelectors.push(`gamemode=${gm}`)
         if(this.selector.level) allSelectors.push(`level=${this.selector.level.render()}`)
         if(this.selector.name) allSelectors.push(`name="${this.selector.name}"`)
-        if(this.selector.nbt) allSelectors.push(`nbt=${JSON.stringify(this.selector.nbt.render())}`)
+        if(this.selector.nbt) allSelectors.push(`nbt=${this.selector.nbt.render()}`)
         if(this.selector.positionned) for(const axe in this.selector.positionned) if(this.selector.positionned[axe] !== undefined) allSelectors.push(`${axe}=${this.selector.positionned[axe]}`)
         if(this.selector.rotation) for(const axe in this.selector.rotation) if(this.selector.rotation[axe] !== undefined) allSelectors.push(`${axe}_rotation=${this.selector.rotation[axe]?.render()}`)
         if(this.selector.scores?.length) {
@@ -237,7 +237,7 @@ class Entity {
         
         const selectorValue = allSelectors.join(',')
         if(!selectorValue) return ""
-        else return `[${allSelectors.join(',')}]`
+        else return `[${selectorValue}]`
     }
 
     isMultipleEntities() {

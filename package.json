@@ -1,9 +1,15 @@
 {
 	"name": "@flymeth/datapackjs",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"author": "Flymeth",
 	"license": "LSI",
 	"description": "A great library to create your own minecraft datapack with javascript!",
+	"repository": {
+		"type": "github",
+		"directory": "/",
+		"url": "https://github.com/Flymeth/datapackjs"
+	},
+	"homepage": "https://flymeth.github.io/datapackjs/web/modules.html",
 	"dependencies": {
 		"fs": "^0.0.1-security",
 		"path": "^0.12.7"
