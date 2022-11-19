@@ -55,7 +55,7 @@ type selector = {
         scoreboard: Scoreboard,
         value: RangeValue
     }[],
-    tags?: string[],
+    tags?: string | string[],
     team?: Team | null,
     name?: string,
     type?: string,
@@ -232,7 +232,10 @@ class Entity {
             const letter = this.letterSelector()
             if(!sortToLetter(this.selector.sort).find(l => l === letter)) allSelectors.push(`sort=${this.selector.sort}`)
         }
-        if(this.selector.tags) for(const name of this.selector.tags) allSelectors.push(`tag=${name}`)
+        if(this.selector.tags) {
+            if(typeof this.selector.tags === "string") this.selector.tags= [this.selector.tags]
+            for(const name of this.selector.tags) allSelectors.push(`tag=${name}`)
+        }
         if(this.selector.team !== undefined) allSelectors.push(`team=${this.selector.team === null ? "" : this.selector.team.name}`)
         
         const selectorValue = allSelectors.join(',')

@@ -21,7 +21,7 @@ class World {
      * @param commands The command to execute inside this world
      */
     executeInside(...commands: Commands) {
-        return processCommands(commands).map(cmd => executeCmd(`execute in ${this.render()}`, cmd))
+        return processCommands(commands).map(cmd => executeCmd(`in ${this.render()}`, cmd))
     }
 
     /**

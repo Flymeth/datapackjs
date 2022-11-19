@@ -28,7 +28,7 @@ declare type selector = {
         scoreboard: Scoreboard;
         value: RangeValue;
     }[];
-    tags?: string[];
+    tags?: string | string[];
     team?: Team | null;
     name?: string;
     type?: string;
